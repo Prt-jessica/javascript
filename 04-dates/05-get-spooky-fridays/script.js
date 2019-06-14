@@ -10,5 +10,26 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    function format(dates){
+        var option = {weekday:"long", year:"numeric", month:"long", day:"numeric"};
+        return dates.toLocaleDateString("fr-FR",option);
+    }
+    document.getElementById("run").addEventListener("click", () =>{
+
+        let annee = document.getElementById("year").value;
+        let tableau = [];
+        for(month=1 ; month <= 12 ; month ++){
+            let dates = new Date(annee, month, 13);
+            if(dates.getDay() == 5){
+                tableau.push(dates);
+    }
+        }
+
+        let result = "";
+        for(i=0 ; i<tableau.length ; i++) {
+        result += format (tableau[i]) + "\n";
+        }
+        alert (result);
+
+    });
 })();

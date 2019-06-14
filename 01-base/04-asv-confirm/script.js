@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var age;
+    var genre;
+    var ville;
+    var confirmation;
+    
+    do {
+        age = prompt("Quel est ton âge?");
+        genre = prompt("De quel sexe est tu?");
+        ville = prompt("D'où vient tu?");
+        confirmation = prompt("Est-ce bon? " + age + " " + genre + " " + ville);
+    } while (confirmation.toLowerCase() != "oui");
+
 })();

@@ -10,5 +10,19 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+
+    var jour = document.getElementById("dob-day").value;
+    var mois = document.getElementById("dob-month").value;
+    var annee = document.getElementById("dob-year").value;
+    var ajd = new Date ();
+
+    var resultat = (ajd.getFullYear() - annee);
+    if (ajd.getMonth() < mois && ajd.getDate() < jour){
+        alert(resultat -1);
+    }
+    else {
+        alert(resultat);
+    }
+});
 })();

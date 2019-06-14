@@ -10,6 +10,11 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", ()=> {
+        console.log(people.reduce(age));
+    });
+
+
     const people = [
         {
             firstname: "Grenville",

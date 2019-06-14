@@ -10,6 +10,13 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", ()=> {
+
+    fruits.forEach(fruit => {
+        console.log(fruit);
+    });
+                
+            });
     const fruits = [
         "pomme",
         "poire",

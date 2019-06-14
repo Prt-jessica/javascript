@@ -10,5 +10,15 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    var confirmation;
+
+
+    confirmation = prompt("Tu veux du gâteau?");
+   
+    if(confirmation == "oui"){
+        alert("Félicitation");
+    }
+    else {
+        alert("Du gâteau, ça ne se refuse pas");
+    }
 })();

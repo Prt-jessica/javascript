@@ -13,6 +13,13 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        var nombres = document.getElementById("number").value;
+        var resultat = 1;
+        nombres = parseFloat(nombres) ;
+        for(i=1 ; i<=nombres ; i++){
+            resultat = resultat * i;
+            console.log(resultat);
+        }
+        alert(resultat);
     });
 })();

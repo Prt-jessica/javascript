@@ -10,21 +10,32 @@
 // You will have time to focus on it later.
 
 (() => {
+    var chiffre1;
+    var chiffre2;
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("addition").addEventListener("click", () => {
-        // perform an addition
+        chiffre1 = parseFloat (document.getElementById("op-one").value);
+        chiffre2 = parseFloat (document.getElementById("op-two").value);
+        alert(chiffre1 + chiffre2);
+        
     });
 
     document.getElementById("substraction").addEventListener("click", () => {
-        // perform an substraction
+        chiffre1 = parseFloat (document.getElementById("op-one").value);
+        chiffre2 = parseFloat (document.getElementById("op-two").value);
+        alert(chiffre1 - chiffre2);
     });
 
     document.getElementById("multiplication").addEventListener("click", () => {
-        // perform an multiplication
+        chiffre1 = parseFloat (document.getElementById("op-one").value);
+        chiffre2 = parseFloat (document.getElementById("op-two").value);
+        alert(chiffre1 * chiffre2);
     });
 
     document.getElementById("division").addEventListener("click", () => {
-        // perform an division
+        chiffre1 = parseFloat (document.getElementById("op-one").value);
+        chiffre2 = parseFloat (document.getElementById("op-two").value);
+        alert(chiffre1 / chiffre2);
     });
 })();

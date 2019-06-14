@@ -8,9 +8,11 @@
 
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
-
 (() => {
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+        for(i=0 ;i<21 ;i=i+2){
+            console.log(i);
+           alert(Math.sqrt(i));
+        }
     });
 })();

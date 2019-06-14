@@ -13,6 +13,13 @@
     // to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", () => {
-        // your code here
+       
+       var nombre_texte = document.getElementById("numbers").value
+       var nombres = nombre_texte.split(",");
+       for(var i=0; i<nombres.length; i++){
+           nombres[i] = parseFloat(nombres[i]);
+       }
+       nombres.sort(function(a, b){return a-b});
+       alert(nombres);
     });
 })();
