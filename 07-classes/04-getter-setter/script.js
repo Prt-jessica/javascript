@@ -10,5 +10,22 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+document.getElementById("run").addEventListener("click", () =>{
+class Person{
+    constructor(firstname, lastname){
+        this.firstname= firstname;
+        this.lastname= lastname;
+    }
+    get name (){
+        return this.firstname + this.lastname ;
+    }
+    set name(chaine){
+        result = chaine.split(" ");
+        console.log(result);
+    }
+
+}  
+let poutchou = new Person ("bidule", "machin");
+console.log(poutchou.name = "lol mdr");
+});
 })();

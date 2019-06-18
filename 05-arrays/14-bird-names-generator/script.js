@@ -37,6 +37,17 @@
         "tangent",
         "arboré",
     ]);
+    document.getElementById("run").addEventListener("click", () => { 
+    let rng = Math.floor(Math.random()*birds.length);
+    let oiseau = birds[rng];
+    let texte = ""
 
-    // your code here
+    if(oiseau.fem == true){
+        texte += "la " + oiseau.name + " " + [...adjectives][Math.floor(Math.random()* adjectives.size)] + "e"; 
+    }
+    else{
+        texte= "le " + oiseau.name + " " + [...adjectives][Math.floor(Math.random() * adjectives.size)];
+    }
+    document.getElementById("target").innerHTML= texte;
+});
 })();

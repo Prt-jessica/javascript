@@ -10,5 +10,18 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+document.getElementById("run").addEventListener("click", () => {
+
+    let perso = {lastname: "Pirotte" , firstname : "Jessica" , age : "28ans" , city: "Vivegnis" , country : "Belgique"};
+    
+    const identite = (obj) => { 
+        return " Nom de famille: " + obj.lastname +
+        "\n Prénom: " + obj.firstname +
+        "\n Âge: " + obj.age +
+        "\n Ville: " + obj.city +
+        "\n Pays:  " + obj.country ;
+
+    };
+    console.log(identite(perso)); 
+});
 })();

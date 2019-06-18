@@ -26,5 +26,17 @@
         os: "linux",
         user: null,
     };
-    // your code here
+    computers.forEach(element => {
+        if (element.avaible == null){
+            element.available =defaultProps.available;
+        }
+        if (element.user == null){
+            element.user = defaultProps.user;
+        }
+        if (element.os = null){
+            element.os = defaultProps.os;
+        }
+
+    });
+    console.log(computers)
 })();

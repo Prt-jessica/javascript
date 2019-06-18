@@ -10,7 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
+    document.getElementById("run").addEventListener("click", () =>{
     const keys = ["name", "species", "age", "gender", "color"];
     const values = ["Skitty", "cat", 9, "female", "tabby"];
-    // your code here
+    let cat = new Map ();
+    console.log(keys.length);
+    for(i=0 ; i < keys.length ; i++){
+        cat.set(keys[i], values[i]);
+    }
+    let final  = Object.fromEntries(cat);
+    console.log(final);
+            
+});
 })();
