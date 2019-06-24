@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+let mdp = document.getElementById("pass-one");
+let ok = document.getElementById("validity");
+mdp.addEventListener("input", () =>{
+    let nmbr = /.*\d.*\d.*/;
+    let result = nmbr.test(mdp.value);
+    if (mdp.value.length >=8 && result == true){
+        ok.textContent = "ok";
+        console.log(ok);
+    }
+    else {
+        ok.textContent = "Pas ok";
+    }
+})
 })();

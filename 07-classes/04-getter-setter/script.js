@@ -17,15 +17,18 @@ class Person{
         this.lastname= lastname;
     }
     get name (){
-        return this.firstname + this.lastname ;
+        return this.firstname + " " + this.lastname ;
     }
     set name(chaine){
-        result = chaine.split(" ");
-        console.log(result);
+        let result = chaine.split(" ");
+        this.firstname= result[0];
+        this.lastname= result[1];
     }
 
 }  
 let poutchou = new Person ("bidule", "machin");
-console.log(poutchou.name = "lol mdr");
+console.log(poutchou.name);
+poutchou.name = "chacha chou";
+console.log(poutchou.name);
 });
 })();

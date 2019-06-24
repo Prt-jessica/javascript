@@ -10,13 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", ()=> {
-    
-        let supOne = fruits.shift();
-        let supTwo = fruits.pop();
-        let ajoutOne = fruits.unshift("banane");
-        let ajoutTwo = fruits.push("kiwi");
-        console.log(fruits);
+
 });
     const fruits = [
         "pomme",
@@ -30,6 +24,11 @@
         "raisin",
         "cerise",
     ];
-
-    // your code here
+    document.getElementById("run").addEventListener("click", ()=> {
+    
+        let supOne = fruits.shift();
+        let supTwo = fruits.pop();
+        let ajoutOne = fruits.unshift("banane");
+        let ajoutTwo = fruits.push("kiwi");
+        console.log(fruits);
 })();

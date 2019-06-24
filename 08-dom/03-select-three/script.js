@@ -10,5 +10,8 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    let cible = document.querySelectorAll(".target")
+    for (i = 0; i < cible.length; i++) {
+    cible[i].innerHTML = "owned";
+    }
 })();

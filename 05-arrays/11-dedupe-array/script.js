@@ -10,17 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", () => {
 
-        let tableauSansDoublon = fruits.reduce(function (acc, valCourante) {
-            if(acc.indexOf(valCourante) === -1) {
-              acc.push(valCourante);
-            };
-            return acc;
-        }, []);
-        console.log(fruits);
-        console.log(tableauSansDoublon);
-    });
     const fruits = [
         "cerise",
         "durian",
@@ -37,6 +27,15 @@
         "raisin",
         "cerise",
     ];
+    document.getElementById("run").addEventListener("click", () => {
 
-    // your code here
+        let tableauSansDoublon = fruits.reduce(function (acc, valCourante) {
+            if(acc.indexOf(valCourante) === -1) {
+              acc.push(valCourante);
+            };
+            return acc;
+        }, []);
+        console.log(fruits);
+        console.log(tableauSansDoublon);
+    });
 })();

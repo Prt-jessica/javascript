@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+let image = document.querySelector("img");
+let one = ""
+image.addEventListener("mouseover", () => { // au survol de la souris
+    one = image.src; // on récupère la première source de l'img
+    image.src = image.dataset.hover; // on met la deuxième img au survol
+});
+image.addEventListener("mouseout", () =>{ // quant o enlève la souris
+
+    image.src = one; // on reprends la première src de l'img
+});
 })();

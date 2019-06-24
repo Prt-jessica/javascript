@@ -11,7 +11,7 @@
 
 (() => {
     document.getElementById("red").addEventListener("click", () => {
-        document.body.style.background = "#B61E08";
+        document.querySelector("html").style.backgroundColor = "#B61E08";
     });
 
     document.getElementById("green").addEventListener("click", () => {

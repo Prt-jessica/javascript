@@ -10,15 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", () => {
-        let newTab = []
-        people.forEach(element => {
-            if(element.age > 18){
-                newTab.push(element);
-            }
-        });
-        console.log(newTab);
-    });
+
     const people = [
         {
             firstname: "Dreddy",
@@ -96,6 +88,13 @@
             age: 81,
         },
     ];
-
-    // your code here
+    document.getElementById("run").addEventListener("click", () => {
+        let newTab = []
+        people.forEach(element => {
+            if(element.age > 18){
+                newTab.push(element);
+            }
+        });
+        console.log(newTab);
+    });
 })();

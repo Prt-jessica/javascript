@@ -10,11 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", ()=>{
 
-        console.log(people.size);
-        console.log(people.has("Alexandre"));
-        });
     const people = new Set([
         "Nicolas",
         "Anthony",
@@ -26,6 +22,9 @@
         "Simon",
         "Lucas",
     ]);
+    document.getElementById("run").addEventListener("click", ()=>{
 
-    // your code here
+        console.log(`Il y a ${people.size} personnes dans le set`); // Backtic => `${}`
+        console.log(people.has("Alexandre"));
+        });
 })();

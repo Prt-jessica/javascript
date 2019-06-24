@@ -10,5 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+ let test= document.getElementById("source").getAttribute("data-image"); // récupère l'attribut image
+ console.log(test);
+ document.getElementById("target").innerHTML = `<img src="${test}" alt="chat"\>`; // met  l'image dans une balise img
+ let del = document.getElementById("source");// sélectione la partie à enlever
+ let parent = document.querySelector(".material");// sélectionne le parent de la partie enlever
+ parent.removeChild(del); // on enleve la partie
 })();

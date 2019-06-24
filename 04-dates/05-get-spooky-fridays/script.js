@@ -18,7 +18,7 @@
 
         let annee = document.getElementById("year").value;
         let tableau = [];
-        for(month=1 ; month <= 12 ; month ++){
+        for(month=0 ; month <= 12 ; month ++){
             let dates = new Date(annee, month, 13);
             if(dates.getDay() == 5){
                 tableau.push(dates);

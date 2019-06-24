@@ -19,14 +19,17 @@
         constructor (name){
             super();
             this.name = name;
-            this.constructor.greeting = "miaou";
+            // this.constructor.greeting = "miaou";
+            Cat.greeting= "miaou";
         }
+        
     }
     class Dog extends Animal{
         constructor(name){
             super();
             this.name = name;
-            this.constructor.greeting = "wouf";
+            // this.constructor.greeting = "wouf";
+            Dog.greeting= "Wouf";
         }
     }
     let meyko = new Dog ("Meyko");

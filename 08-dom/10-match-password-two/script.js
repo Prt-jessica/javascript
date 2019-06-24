@@ -10,5 +10,17 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+    document.getElementById("run").addEventListener("click", () => { 
+    let mdp1 = document.getElementById("pass-one");
+    let mdp2 = document.getElementById("pass-two");
+    
+    if ( mdp1.value != mdp2.value){
+        mdp1.classList.add("error");
+        mdp2.classList.add("error");
+    }
+    else {
+        mdp1.style.border= "1px solid silver";
+        mdp2.style.border = "1px solid silver"
+    } 
+});
 })();

@@ -10,14 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", () => {
-            if(fruits.indexOf("pomme") > -1){
-                console.log("oui, il y a une pomme");
-            }
-            else{
-                console.log("non, il y a pas de pomme");
-            }
-    })
+
     const fruits = [
         "pomme",
         "poire",
@@ -32,6 +25,13 @@
         "raisin",
         "cerise",
     ];
-
+    document.getElementById("run").addEventListener("click", () => {
+        if(fruits.indexOf("pomme") > -1){
+            console.log("oui, il y a une pomme");
+        }
+        else{
+            console.log("non, il y a pas de pomme");
+        }
+})
     
 })();

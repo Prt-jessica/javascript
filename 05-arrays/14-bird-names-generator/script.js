@@ -38,7 +38,7 @@
         "arboré",
     ]);
     document.getElementById("run").addEventListener("click", () => { 
-    let rng = Math.floor(Math.random()*birds.length);
+    let rng = (max, min) => {Math.floor(Math.random() * (max - min)- min)};
     let oiseau = birds[rng];
     let texte = ""
 

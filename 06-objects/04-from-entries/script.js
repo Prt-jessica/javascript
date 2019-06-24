@@ -15,7 +15,7 @@
     const values = ["Skitty", "cat", 9, "female", "tabby"];
     let cat = new Map ();
     console.log(keys.length);
-    for(i=0 ; i < keys.length ; i++){
+    for(let i=0 ; i < keys.length ; i++){
         cat.set(keys[i], values[i]);
     }
     let final  = Object.fromEntries(cat);

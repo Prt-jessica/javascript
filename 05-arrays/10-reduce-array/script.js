@@ -10,10 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", ()=> {
-        let result= people.reduce((total, currentValue) => total + currentValue.age, 0);
-        console.log(result);
-    });
+
     const people = [
         {
             firstname: "Grenville",
@@ -91,6 +88,8 @@
             age: 81,
         },
     ];
-
-    // your code here
+    document.getElementById("run").addEventListener("click", ()=> {
+        let result= people.reduce((total, currentValue) => total + currentValue.age, 0);
+        console.log(result);
+    });
 })();

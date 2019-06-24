@@ -10,5 +10,10 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+ let num= document.getElementById("target");
+ let slide= document.getElementById("slider");
+ slide.addEventListener("input", () => {
+num.textContent = "0" + slide.value;
+ });
+
 })();

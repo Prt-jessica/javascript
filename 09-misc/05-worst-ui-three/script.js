@@ -10,5 +10,23 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+let inputOne = document.getElementById("part-one");
+let inputTwo = document.getElementById("part-two");
+let inputThree = document.getElementById("part-three");
+let inputFour = document.getElementById("part-four");
+
+let buttonOne = document.getElementById("fix-part-one");
+let buttonTwo = document.getElementById("fix-part-two");
+let buttonThree = document.getElementById("fix-part-three");
+let buttonFour = document.getElementById("fix-part-four");
+
+const deffiler = () => {
+    value = parseInt(inputOne.innerText) + 1;
+
+    if (value > inputOne.dataset.max){
+        value = inputOne.dataset.min;
+    } 
+    setTimeout(deffiler)
+};
+deffiler ()
 })();

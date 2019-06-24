@@ -10,13 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", () =>{
-        fruits.delete("pomme");// enlève un éllement
-        fruits.delete("cerise");
-        fruits.add("banane");// rajoute un éllément
-        fruits.add("kiwi");
-        console.log(fruits);
-    });
+
     const fruits = new Set([
         "pomme",
         "poire",
@@ -29,6 +23,11 @@
         "raisin",
         "cerise",
     ]);
-
-    // your code here
+    document.getElementById("run").addEventListener("click", () =>{
+        fruits.delete("pomme");// enlève un éllement
+        fruits.delete("cerise");
+        fruits.add("banane");// rajoute un éllément
+        fruits.add("kiwi");
+        console.log(fruits);
+    });
 })();

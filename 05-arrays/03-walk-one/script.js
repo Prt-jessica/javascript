@@ -10,12 +10,7 @@
 // You will have time to focus on it later.
 
 (() => {
-    document.getElementById("run").addEventListener("click", ()=> {
 
-        for(i=0 ; i<fruits.length ; i++){
-            console.log(fruits[i]);
-        }
-    });
     const fruits = [
         "pomme",
         "poire",
@@ -30,6 +25,10 @@
         "raisin",
         "cerise",
     ];
+    document.getElementById("run").addEventListener("click", ()=> {
 
-    // your code here
+        for(i=0 ; i<fruits.length ; i++){
+            console.log(fruits[i]);
+        }
+    });
 })();
