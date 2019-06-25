@@ -22,24 +22,24 @@ text.textContent = "";
 const addcharacter = (a, espace) => { //fonction qui prends l'indexe de lettre en paramètre
 
 
-    // let esp = ""; // je crée une var qui va servire à si y a un espace le rajouté mais si y'en a pas il rajoutera rien
-    // if (espace == true){
-    //     esp += " "; // ici j'appele la var esp + " " pour ajouté l'espace car c'est vrai
-    // }
+    let esp = ""; // je crée une var qui va servire à si y a un espace le rajouté mais si y'en a pas il rajoutera rien
+    if (espace == true){
+        esp += " "; // ici j'appele la var esp + " " pour ajouté l'espace car c'est vrai
+    }
 
 
-    // on ecris dans le bloc pour ça on reprends la phrase et on reprent le tableu lettre par lettre
-    document.getElementById("target").innerText =  document.getElementById("target").innerText + textTab[a]; 
+    // on ecris dans le bloc pour ça on reprends la phrase et on reprent le tableau lettre par lettre
+    document.getElementById("target").textContent =  document.getElementById("target").innerText + esp + textTab[a]; 
     
     //textContent supprimer les espaces en trop
     
-    
-    // if (textTab[a] == " "){
-    //     espace= true; // si dans ma phrase il tombe sur un espace espace est vrai
-    // }
-    // else {
-    //     espace = false; // si il tombe pas sur un espace c'est faux
-    // }
+
+    if (textTab[a] == " "){
+        espace= true; // si dans ma phrase il tombe sur un espace espace est vrai
+    }
+    else {
+        espace = false; // si il tombe pas sur un espace c'est faux
+    }
 
     if( a < textTab.length){ // si l'indexe est plus pettite que la taille du tableau je rappele la fonction après un délai
         setTimeout(() => {addcharacter(a+=1, espace)}, Math.floor(Math.random()*(400 - 200)+200));

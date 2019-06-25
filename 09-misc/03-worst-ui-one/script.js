@@ -12,8 +12,8 @@
 (() => {
  let num= document.getElementById("target");
  let slide= document.getElementById("slider");
- slide.addEventListener("input", () => {
-num.textContent = "0" + slide.value;
+    slide.addEventListener("input", () => {
+         num.innerText = "0" + slide.value;
  });
 
 })();
