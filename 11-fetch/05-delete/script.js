@@ -10,5 +10,27 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+document.getElementById("run").addEventListener("click", () =>{
+console.clear();
+    let id = document.getElementById("hero-id").value;
+    id = id.split(",");
+    let init = {
+        method:"DELETE"
+    }
+    id.forEach(element =>{
+        fetch("http://localhost:3000/heroes/"+element, init)
+    })
+
+    setTimeout(()=>{
+        fetch("http://localhost:3000/heroes")
+        .then((reponse) =>{
+            reponse.json().then((temp)=>{
+                temp.forEach(element => {
+                    console.log(element);
+                    
+                });
+            });
+        });
+    },2000);
+})
 })();

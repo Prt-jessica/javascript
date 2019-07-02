@@ -10,5 +10,16 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+document.getElementById("run").addEventListener("click", () =>{ 
+
+
+fetch("http://localhost:3000/heroes").then((reponse) =>{
+        reponse.json().then( (json) =>{
+            json.forEach(element => {
+              console.log(element.name);  
+            });
+
+        })
+    })
+});
 })();

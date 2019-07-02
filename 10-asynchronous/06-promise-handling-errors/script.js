@@ -10,5 +10,14 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+document.getElementById("run").addEventListener("click", () => {
+    
+    let person = window.lib.getPersons(); 
+     person.then(   (tab) => { 
+        console.log(tab);
+        
+    }).catch((erreur) =>{ //  on attache l'erreur a la promise
+        console.error("Erreur :(");
+    })
+})
 })();

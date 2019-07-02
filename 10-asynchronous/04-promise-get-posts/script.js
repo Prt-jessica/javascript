@@ -10,5 +10,8 @@
 // You will have time to focus on it later.
 
 (() => {
-    // your code here
+ const promes = window.lib.getPosts(); // variable qui rapel une promesse grâce a new Promise dans promises.js
+    promes.then((tab) => { // retourne la prommesse et ses paramètre
+        console.log(tab); // affiche nos paramètre donc notre tab
+ })
 })();
